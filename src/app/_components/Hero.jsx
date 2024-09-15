@@ -34,7 +34,7 @@ const Hero = ({ dancing, patrick }) => {
       <Button className="flex mx-auto my-5" >Prenota ora!</Button>
       <div
         id="circle"
-        className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[450px] top-[200px] -z-10"
+        className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[300px] md:end-[1200px] top-[400px] -z-10"
       ></div>
     </div>
   );
