@@ -21,7 +21,7 @@ const Navbar = ({ patrick }) => {
   return (
     <>
       <div
-        className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 Home shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0`}
+        className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 Home shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0 z-10`}
       >
         <Link href="/">
           <Image
@@ -65,7 +65,7 @@ const Navbar = ({ patrick }) => {
           <div>
             <Sheet>
               <SheetTrigger>
-                <Menu className="size-[50px]" />
+                <Menu className="size-[50px] text-primary" />
               </SheetTrigger>
               <SheetTitle></SheetTitle>
               <SheetContent className="w-[230px] bg-third rounded-xl">
