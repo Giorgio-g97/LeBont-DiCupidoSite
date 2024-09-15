@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button"
 
 const Hero = ({ dancing, patrick }) => {
   return (
-    <div className="absolute" id="home">
+    <div id="home">
       <div
         id="circle"
         className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[-270px] top-[10px] -z-10"
       ></div>
       <h1
-        className={`mt-36 w-full text-center text-[40px] font-bold ${dancing.className} p-5`}
+        className={`mt-36 w-full text-center text-[40px] font-bold ${dancing.className} text-primary p-5`}
       >
         Benvenuti nel paradiso senza glutine!
       </h1>
