@@ -31,7 +31,7 @@ const Hero = ({ dancing, patrick }) => {
         artigianali, preparati con cura e passione utilizzando ingredienti di
         qualità e ricette tradizionali adattate.
       </p>
-      <Button className="flex mx-auto my-5" >Prenota ora!</Button>
+      <Button className="flex mx-auto my-5 hover:scale-105 transition-all ease-in-out" >Prenota ora!</Button>
       <div
         id="circle"
         className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[300px] md:end-[1200px] top-[400px] -z-10"
