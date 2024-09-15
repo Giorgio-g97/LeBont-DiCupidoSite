@@ -16,13 +16,15 @@ const Navbar = () => {
   return (
     <>
       <div className="m-3 h-30 bg-secondary flex justify-between items-center p-2 Home shadow-lg rounded-xl">
-        <Image
-          className="p-1"
-          alt="logo"
-          src="/logo.png"
-          width={100}
-          height={100}
-        />
+        <Link href="/">
+          <Image
+            className="p-1"
+            alt="logo"
+            src="/logo.png"
+            width={100}
+            height={100}
+          />
+        </Link>
         <div>
           <Sheet>
             <SheetTrigger>
