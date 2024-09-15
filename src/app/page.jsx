@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Navbar patrick={patrick} />
-      <Hero />
+      <Hero dancing={dancing} patrick={patrick} />
     </>
   );
 }

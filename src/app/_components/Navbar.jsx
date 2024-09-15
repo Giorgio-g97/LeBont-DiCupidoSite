@@ -21,7 +21,7 @@ const Navbar = ({ patrick }) => {
   return (
     <>
       <div
-        className={`m-3 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 Home shadow-lg rounded-xl ${patrick.className} text-[30px]`}
+        className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 Home shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0`}
       >
         <Link href="/">
           <Image
