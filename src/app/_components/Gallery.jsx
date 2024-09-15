@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Image from "next/image";
 
 // ShadCN UI
 import {
@@ -8,9 +10,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
 
-const Gallery = ({ dancing, patrick }) => {
+const Gallery = ({ dancing }) => {
   const arrayImages = [
     { id: 1, url: "/img_1.jpg" },
     { id: 2, url: "/img_2.jpg" },
@@ -28,8 +30,11 @@ const Gallery = ({ dancing, patrick }) => {
       >
         Le nostre creazioni
       </h1>
-      <div className="flex justify-center">
-        <Carousel className="max-w-xs md:max-w-[80vw]">
+      <div className="mt-5 flex justify-center">
+        <Carousel
+          className="max-w-xs md:max-w-[80vw]"
+          plugins={[Autoplay({ delay: 2000, loop: true })]}
+        >
           <CarouselContent>
             {arrayImages.map((img, i) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/4" key={i}>

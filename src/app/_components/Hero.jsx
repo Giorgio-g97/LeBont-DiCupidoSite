@@ -12,7 +12,7 @@ const Hero = ({ dancing, patrick }) => {
         className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[-270px] top-[10px] -z-10"
       ></div>
       <h1
-        className={`mt-36 w-full text-center text-[40px] font-bold ${dancing.className} text-primary p-5`}
+        className={`pt-40 w-full text-center text-[40px] font-bold ${dancing.className} text-primary p-5`}
       >
         Benvenuti nel paradiso senza glutine!
       </h1>
