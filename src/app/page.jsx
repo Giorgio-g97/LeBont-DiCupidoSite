@@ -1,6 +1,7 @@
 import { Dancing_Script, Patrick_Hand } from "next/font/google";
 import Navbar from "./_components/Navbar";
 import { DnaIcon } from "lucide-react";
+import Hero from "./_components/Hero";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -14,7 +15,8 @@ const patrick = Patrick_Hand({
 export default function Home() {
   return (
     <>
-      <Navbar dancing={dancing} />
+      <Navbar patrick={patrick} />
+      <Hero />
     </>
   );
 }
