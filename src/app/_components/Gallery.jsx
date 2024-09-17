@@ -24,7 +24,7 @@ const Gallery = ({ dancing }) => {
   ];
 
   return (
-    <div id="gallery" className="my-10">
+    <div id="gallery" className="my-10 pt-40">
       <h1
         className={`${dancing.className} text-primary text-[50px] text-center`}
       >

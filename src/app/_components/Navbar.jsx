@@ -20,7 +20,7 @@ const Navbar = ({ patrick }) => {
 
   return (
     <div
-      className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 Home shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0 top-0 z-10`}
+      className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0 top-0 z-10`}
     >
       <Link href="/">
         <Image

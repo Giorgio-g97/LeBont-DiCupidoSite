@@ -33,9 +33,9 @@ const Reviews = ({ dancing }) => {
       >
         Dicono di noi
       </h1>
-      <div>
+      <div className="flex flex-wrap justify-center gap-6 m-5">
         {reviewsUtenti.map((rev, i)=> (
-            <ReviewCard key={i} img={rev.img} review={rev.review}/>
+            <ReviewCard key={i} img={rev.img} review={rev.review} rating={rev.rating}/>
         ))}
       </div>
       {/* <div>
@@ -48,7 +48,7 @@ const Reviews = ({ dancing }) => {
       </div> */}
 
       {/* Da mettere nel footer */}
-      <h1>Ci troviamo qui </h1>
+      {/* <h1>Ci troviamo qui </h1>
       <iframe
         className="rounded-2xl shadow-2xl"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13986.009904072638!2d15.552752230781064!3d41.45381634257328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339d934ac365e69%3A0x50f43dcd6517c0e0!2sLe%20Bont%C3%A0%20di%20Cupido!5e1!3m2!1sit!2sit!4v1726420325169!5m2!1sit!2sit"
@@ -57,7 +57,7 @@ const Reviews = ({ dancing }) => {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 };

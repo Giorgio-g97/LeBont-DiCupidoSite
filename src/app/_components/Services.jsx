@@ -3,7 +3,7 @@ import React from "react";
 
 const Services = ({ dancing, patrick }) => {
   return (
-    <div className="pt-10" id="servizi">
+    <div className="pt-40" id="servizi">
       <h1
         className={`w-full text-center text-[50px] font-bold ${dancing.className} text-primary pb-5`}
       >

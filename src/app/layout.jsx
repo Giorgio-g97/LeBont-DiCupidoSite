@@ -1,3 +1,6 @@
+// Import Material UI
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body>
-        {children}
+        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>
   );
