@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 
 // Import Framer Motion
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = ({ dancing, patrick }) => {
   return (
@@ -49,7 +50,9 @@ const Hero = ({ dancing, patrick }) => {
         qualità e ricette tradizionali adattate.
       </motion.p>
       <Button className="flex mx-auto my-5 hover:scale-105 transition-all ease-in-out">
-        Prenota ora!
+        <Link href="https://wa.me/3516568470?text=Ciao%2C+vorrei+effettuare+una+prenotazione%21">
+          Prenota ora!
+        </Link>
       </Button>
       <div
         id="circle-2"
