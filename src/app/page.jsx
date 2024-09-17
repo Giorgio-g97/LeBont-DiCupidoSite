@@ -4,6 +4,7 @@ import Hero from "./_components/Hero";
 import Services from "./_components/Services";
 import Gallery from "./_components/Gallery";
 import Reviews from "./_components/Reviews";
+import Footer from "./_components/Footer";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function Home() {
       <Services dancing={dancing} patrick={patrick} />
       <Gallery dancing={dancing} patrick={patrick} />
       <Reviews dancing={dancing} />
+      <Footer dancing={dancing} patrick={patrick} />
     </>
   );
 }

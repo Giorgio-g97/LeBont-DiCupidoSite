@@ -32,7 +32,7 @@ const Gallery = ({ dancing }) => {
       </h1>
       <div className="mt-5 flex justify-center">
         <Carousel
-          className="max-w-xs md:max-w-[80vw]"
+          className="max-w-[250px] md:max-w-[80vw]"
           plugins={[Autoplay({ delay: 2000, loop: true })]}
         >
           <CarouselContent>
