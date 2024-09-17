@@ -49,8 +49,12 @@ const Hero = ({ dancing, patrick }) => {
         artigianali, preparati con cura e passione utilizzando ingredienti di
         qualità e ricette tradizionali adattate.
       </motion.p>
-      <Button className="flex mx-auto my-5 hover:scale-105 transition-all ease-in-out">
-        <Link href="https://wa.me/3516568470?text=Ciao%2C+vorrei+effettuare+una+prenotazione%21">
+      <Button className="flex mx-auto hover:scale-105 transition-all ease-in-out">
+        <Link
+          className="flex items-center"
+          href="https://wa.me/3516568470?text=Ciao%2C+vorrei+effettuare+una+prenotazione%21"
+        >
+          <Image className="p-1" src="/wa-icon.svg" width={30} height={30} alt="wa-icon" />
           Prenota ora!
         </Link>
       </Button>
