@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="it" style={{ scrollBehavior: "smooth" }}>
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body>
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
