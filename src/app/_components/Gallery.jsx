@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
+//Import Framer Motion
+import { motion } from "framer-motion";
+
 const Gallery = ({ dancing }) => {
   const arrayImages = [
     { id: 1, url: "/img_1.jpg" },
@@ -24,7 +27,13 @@ const Gallery = ({ dancing }) => {
   ];
 
   return (
-    <div id="gallery" className="my-10 pt-40">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.7 }}
+      id="gallery"
+      className="my-10 pt-40"
+    >
       <h1
         className={`${dancing.className} text-primary text-[50px] text-center`}
       >
@@ -52,7 +61,7 @@ const Gallery = ({ dancing }) => {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

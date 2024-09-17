@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
 // ShadCN UI
 import { Button } from "@/components/ui/button";
+
+// Import Framer Motion
+import { motion } from "framer-motion";
 
 const Hero = ({ dancing, patrick }) => {
   return (
@@ -11,26 +15,39 @@ const Hero = ({ dancing, patrick }) => {
         id="circle"
         className="bg-secondary rounded-full w-[450px] h-[450px] fixed end-[-270px] top-[10px] -z-10"
       ></div>
-      <h1
+      <motion.h1
+        initial={{ opacity: 0, y: 5 }}
+        animate={{ opacity: 1, y: 0 }}
         className={`pt-40 w-full text-center text-[40px] font-bold ${dancing.className} text-primary p-5`}
       >
         Benvenuti nel paradiso senza glutine!
-      </h1>
-      <Image
-        className="mx-auto"
-        src="/hero.jpg"
-        width={300}
-        height={300}
-        alt="hero-image"
-      />
-      <p className={`${patrick.className} m-5 text-xl text-justify`}>
+      </motion.h1>
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        <Image
+          className="mx-auto"
+          src="/hero.jpg"
+          width={300}
+          height={300}
+          alt="hero-image"
+        />
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.7 }}
+        className={`${patrick.className} m-5 text-xl text-justify`}
+      >
         Sognavate di gustare torte e pasticcini freschi, realizzati con
         ingredienti genuini e senza compromessi? Ora è possibile! La nostra
         pasticceria è dedicata ai celiaci e a tutti coloro che amano il dolce,
         ma vogliono evitare glutine. Offriamo una vasta gamma di prodotti
         artigianali, preparati con cura e passione utilizzando ingredienti di
         qualità e ricette tradizionali adattate.
-      </p>
+      </motion.p>
       <Button className="flex mx-auto my-5 hover:scale-105 transition-all ease-in-out">
         Prenota ora!
       </Button>

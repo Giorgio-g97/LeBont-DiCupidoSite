@@ -18,6 +18,12 @@ import { useWindowSize } from "../../lib/useWindowSize";
 const Navbar = ({ patrick }) => {
   const { width } = useWindowSize();
 
+  const variantLinks = {
+    enter: { opacity: 0, x: -50 },
+    center: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 50 },
+  };
+
   return (
     <div
       className={`m-5 h-30 bg-secondary flex justify-between md:justify-normal items-center p-2 shadow-lg rounded-xl ${patrick.className} text-[30px] fixed inset-x-0 top-0 z-10`}

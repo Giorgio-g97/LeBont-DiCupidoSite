@@ -1,9 +1,17 @@
+"use client"
 import { ChefHat, MilkOff, Ticket, WheatOff } from "lucide-react";
 import React from "react";
 
+//Import Framer Motion
+import {motion} from "framer-motion"
+
 const Services = ({ dancing, patrick }) => {
   return (
-    <div className="pt-40" id="servizi">
+    <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{delay: 0.7}}
+    className="pt-40" id="servizi">
       <h1
         className={`w-full text-center text-[50px] font-bold ${dancing.className} text-primary pb-5`}
       >
@@ -29,7 +37,7 @@ const Services = ({ dancing, patrick }) => {
           <Ticket /> Prodotti erogabili ASL
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

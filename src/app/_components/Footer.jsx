@@ -58,9 +58,7 @@ const Footer = ({ dancing, patrick }) => {
           <iframe
             className="border-0 rounded-3xl shadow-2xl w-full h-96 px-3"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11961.309138449651!2d15.552752230781064!3d41.45381634257328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339d934ac365e69%3A0x50f43dcd6517c0e0!2sLe%20Bont%C3%A0%20di%20Cupido!5e0!3m2!1sit!2sit!4v1726565850061!5m2!1sit!2sit"
-            allowfullscreen
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

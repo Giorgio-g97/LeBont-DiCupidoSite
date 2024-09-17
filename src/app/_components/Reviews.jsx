@@ -1,5 +1,10 @@
+"use client";
 import React from "react";
 import ReviewCard from "./ReviewCard";
+
+// Import Framer Motion
+import { motion, stagger } from "framer-motion";
+import { Hidden } from "@mui/material";
 
 const Reviews = ({ dancing }) => {
   const reviewsUtenti = [
@@ -27,13 +32,32 @@ const Reviews = ({ dancing }) => {
   ];
 
   return (
-    <div id="reviews" className="my-10 pt-40">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5 }}
+      id="reviews"
+      className="my-10 pt-40"
+    >
       <h1
         className={`${dancing.className} text-primary text-[50px] text-center`}
       >
         Dicono di noi
       </h1>
-      <div className="flex flex-wrap justify-center gap-6 m-5">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.35,
+            },
+          },
+        }}
+        initial="hidden"
+        animate="show"
+        className="flex flex-wrap justify-center gap-6 m-5"
+      >
         {reviewsUtenti.map((rev, i) => (
           <ReviewCard
             key={i}
@@ -42,28 +66,8 @@ const Reviews = ({ dancing }) => {
             rating={rev.rating}
           />
         ))}
-      </div>
-      {/* <div>
-        <iframe
-          src="https://widgets.sociablekit.com/google-reviews/iframe/25463108"
-          frameborder="0"
-          width="100%"
-          height="1000"
-        ></iframe>
-      </div> */}
-
-      {/* Da mettere nel footer */}
-      {/* <h1>Ci troviamo qui </h1>
-      <iframe
-        className="rounded-2xl shadow-2xl"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13986.009904072638!2d15.552752230781064!3d41.45381634257328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339d934ac365e69%3A0x50f43dcd6517c0e0!2sLe%20Bont%C3%A0%20di%20Cupido!5e1!3m2!1sit!2sit!4v1726420325169!5m2!1sit!2sit"
-        width="550"
-        height="300"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe> */}
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
