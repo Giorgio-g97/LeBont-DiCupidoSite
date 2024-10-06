@@ -1,3 +1,5 @@
+## This is [draft/blueprint](https://excalidraw.com/#json=XgMq75pRMWg1IWK-dDuA7,mIE_sJTH67i-l3SQXeEGLg) of the project: 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
